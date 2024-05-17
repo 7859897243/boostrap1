@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootsrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+      .img1{
+        height: 32px;
+        width: 400px;
+        margin-left: -80px;
+        position: absolute;
+        margin-top: 35px;
+       
+
+      }
+
+      .dropdown{
+        margin-left: 220px;
+        margin-top: 35px;
+        position: absolute; 
+        
+        
+      }
+
+      #btn1{
+        background-color: rgb(199, 216, 241);
+        color: #066ac9;
+        font-weight: 500;
+        border: none;
+      }
+
+      .dropdown1{
+        margin-top: 35px;
+        margin-left: 520px;
+        position: absolute;
+      }
+
+      #btn2{
+        background-color: rgb(255, 255, 255);
+        color: #066ac9;
+        border: none;
+        font-weight: 600;
+      
+        
+      }
+
+      .dropdown2{
+        margin-top: 35px;
+        margin-left: 630px;
+        position: absolute;
+      }
+
+      #btn3{
+        background-color: rgb(255, 255, 255);
+        color: #066ac9;
+        border: none;
+        font-weight: 600;
+      
+        
+      }
+
+      .dropdown3{
+        margin-top: 35px;
+        margin-left: 710px;
+        position: absolute;
+      }
+
+      #btn4{
+        background-color: rgb(255, 255, 255);
+        color: #066ac9;
+        border: none;
+        font-weight: 600;
+      
+        
+      }
+
+      .dropdown4{
+        margin-top: 35px;
+        margin-left: 810px;
+        position: absolute;
+      }
+
+      #btn5{
+        background-color: rgb(255, 255, 255);
+        color: #066ac9;
+        border: none;
+        font-weight: 600;
+      }
+
+      
+
+      #inp1{
+        width: 250px;
+      }
+
+      .d-flex{
+        margin-top: 35px;
+        margin-left: 1150px;
+        position: absolute;
+
+
+      }
+
+      .p1{
+        font-size: 3.5em;
+        margin-top: 250px;
+        margin-left: 100px;
+        position: absolute;
+        font-weight: 700;
+      }
+
+      .p2{
+        font-size: 1.1em;
+        margin-top: 450px;
+        margin-left: 100px;
+        position: absolute;
+        color: #747579;
+      }
+
+      .p3{
+        margin-top: 519px;
+        margin-left: 100px;
+        position: absolute;
+        color: #747579;
+      }
+
+      .p4{
+        margin-top: 519px;
+        margin-left: 260px;
+        position: absolute;
+        color: #747579;
+      }
+
+      .p5{
+        margin-top: 519px;
+        margin-left: 390px;
+        position: absolute;
+        color: #747579;
+      }
+
+
+      .img3{
+        margin-top: 145px;
+        margin-left: 865px;
+        position: absolute;
+      }
+/* 
+      @media screen and (max-wdith: 450px) {
+        
+      } */
+
+      .img4{
+        height: 22px;
+        width: 22px;
+      }
+
+      .img5{
+        height: 22px;
+        width: 22px;
+      }
+
+      .img6{
+        height: 22px;
+        width: 22px;
+      }
+
+      .btn1{
+        margin-top: 570px;
+        margin-left: 100px;
+        background-color: rgb(249, 218, 222);
+        position: absolute;
+        border: none;
+        border-radius: 7px;
+        padding: 13px 27px 13px 27px ;
+        color: rgb(179, 0, 0);
+        font-weight: 549;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.4s;
+      }
+
+      .btn1:hover{
+        background-color:  rgb(179, 0, 0);
+        color: white;
+        transform: scale(1) ;
+      }
+
+      .img7{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        margin-top: 570px;
+        margin-left:270px ;
+      }
+
+      .p6{
+        position: absolute;
+        margin-top: 583px;
+        margin-left: 330px;
+        font-weight: 500;
+        
+      }
+      .a1{
+        text-decoration: none;
+        color: black;
+
+      }
+
+      .card1{
+        padding: 10px; 
+        background-color: lightyellow;
+      }
+
+     
+
+
+    </style>
+</head>
+<body>
+
+    <header><img src="logo3.svg" class="img1" alt=""></header>
+    <div class="dropdown">
+      <button id="btn1" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Category
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Development</a></li>
+        <li><a class="dropdown-item" href="#">Design</a></li>
+        <li><a class="dropdown-item" href="#">Marketing</a></li>
+        <li><a class="dropdown-item" href="#">Music</a></li>
+        <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+        <li><a class="dropdown-item" href="#">IT & software        </a></li>
+        <li><a class="dropdown-item" href="#">Personal development</a></li>
+        <li><a class="dropdown-item" href="#">Health & fitness</a></li>
+        <li><a class="dropdown-item" href="#">Teaching</a></li>
+        <li><a class="dropdown-item" href="#">Social science</a></li>
+        <li><a class="dropdown-item" href="#">Math & logic </a></li>
+        <li><a class="dropdown-item" href="#">View all categories</a></li>
+
+      </ul>
+    </div> 
+      <!-- <div class="nav-1">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Demos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accounts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-disabled="true">Megamenu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">...</a>
+          </li>
+        </ul>
+        </div> -->
+
+        <div class="dropdown1">
+
+          <button id="btn2" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home Default</a></li>
+            <li><a class="dropdown-item" href="#">Home Education</a></li>
+            <li><a class="dropdown-item" href="#">Home Academy</a></li>
+            <li><a class="dropdown-item" href="#">Home Course</a></li>
+            <li><a class="dropdown-item" href="#">Home University</a></li>
+            <li><a class="dropdown-item" href="#">Home Kindergarten</a></li>
+            <li><a class="dropdown-item" href="#">Home Landing</a></li>
+            <li><a class="dropdown-item" href="#">Home Tutor</a></li>
+            <li><a class="dropdown-item" href="#">Home School</a></li>
+            <li><a class="dropdown-item" href="#">Home Abroad</a></li>
+            <li><a class="dropdown-item" href="#">Home Workshop</a></li>
+            
+    
+          </ul>
+
+
+        </div>
+
+        <div class="dropdown2">
+
+          <button id="btn3" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Course</a></li>
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Hero Banner</a></li>
+            <li><a class="dropdown-item" href="#">Instructor List</a></li>
+            <li><a class="dropdown-item" href="#">Instructor Single</a></li>
+            <li><a class="dropdown-item" href="#">Become an Instructor</a></li>
+            <li><a class="dropdown-item" href="#">Abroad Single</a></li>
+            <li><a class="dropdown-item" href="#">Workshop Detail</a></li>
+            <li><a class="dropdown-item" href="#">Event Detail</a></li>
+            <li><a class="dropdown-item" href="#">shop</a></li>
+            <li><a class="dropdown-item" href="#">Help</a></li>
+            <li><a class="dropdown-item" href="#">Authentication</a></li>
+            <li><a class="dropdown-item" href="#">Form</a></li>
+            <li><a class="dropdown-item" href="#">Specialty</a></li>
+
+    
+          </ul>
+
+
+        </div>
+
+        <div class="dropdown3">
+
+          <button id="btn4" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Accounts
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Instructor</a></li>
+            <li><a class="dropdown-item" href="#">Student</a></li>
+            <li><a class="dropdown-item" href="#">Admin </a></li>
+            <li><a class="dropdown-item" href="#">Edit Profile </a></li>
+            <li><a class="dropdown-item" href="#"> Settings</a></li>
+            <li><a class="dropdown-item" href="#">Delete Profile  </a></li>
+            <li><a class="dropdown-item" href="#">Dropdown levels </a></li>
+            
+
+    
+          </ul>
+
+
+        </div>
+
+        <div class="dropdown4">
+
+          <button id="btn5" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Megamenu
+          </button>
+          <ul class="dropdown-menu"> 
+             <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#"> </a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#">   </a></li>
+            <li><a class="dropdown-item" href="#"> </a></li> 
+             
+
+    
+           </ul>
+
+
+        </div>
+
+       
+          <div class="container-fluid">
+            <a></a> 
+            <form class="d-flex" role="search">
+              <input id="inp1" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="btn7" class="btn btn-outline-success" type="submit">Search</button>
+            </form> 
+          </div>
+        </nav>
+
+       <div>
+          <p class="p1">
+            Limitless learning at <br>your fingertips
+          </p>
+          <p class="p2">
+            Online learning and teaching marketplace with 5K+ courses & 10M <br>
+            students. Taught by experts to help you acquire new skills.
+          </p>
+          <div class="">
+           <p class="p3"> <img class="img4" src="ddd55-removebg-preview.png" alt="">Learn with experts</p>  
+            
+           <p class="p4"><img class="img5" src="ddd55-removebg-preview.png" alt=""> Get certificate</p>  
+            
+           <p class="p5"><img class="img6" src="ddd55-removebg-preview.png" alt=""> Get membership</p>
+          </div>
+        </div>
+
+        <div>
+          <img class="img3" src="ddd53.png" alt="">
+        </div> 
+
+        <div>
+          <button class="btn1"> Get Started</button>
+        </div>
+        <img class="img7" src="ddd645png-removebg-preview.png" alt="">
+        <p class="p6">
+         <a class="a1" href="#"> Watch video </a>
+        </p>
+
+        <div class="card1">
+          <p>10K</p>
+          <p>Online Courses </p>
+        </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
